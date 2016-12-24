@@ -1,0 +1,41 @@
+{
+  "name": "require-node-loader",
+  "version": "1.0.1",
+  "description": "webpack loader for npm package require-node",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": {
+    "name": "luoshaohua"
+  },
+  "license": "ISC",
+  "dependencies": {
+    "loader-utils": "^0.2.16"
+  },
+  "_id": "require-node-loader@1.0.1",
+  "_shasum": "1424847a3b75a102a89f666562b1b20cad2945b9",
+  "_from": "require-node-loader@*",
+  "_npmVersion": "2.15.9",
+  "_nodeVersion": "4.5.0",
+  "_npmUser": {
+    "name": "luoshaohua",
+    "email": "luoshaohua.cn@gmail.com"
+  },
+  "dist": {
+    "shasum": "1424847a3b75a102a89f666562b1b20cad2945b9",
+    "tarball": "https://registry.npmjs.org/require-node-loader/-/require-node-loader-1.0.1.tgz"
+  },
+  "maintainers": [
+    {
+      "name": "luoshaohua",
+      "email": "luoshaohua.cn@gmail.com"
+    }
+  ],
+  "_npmOperationalInternal": {
+    "host": "packages-12-west.internal.npmjs.com",
+    "tmp": "tmp/require-node-loader-1.0.1.tgz_1482490572513_0.9413824307266623"
+  },
+  "directories": {},
+  "_resolved": "https://registry.npmjs.org/require-node-loader/-/require-node-loader-1.0.1.tgz"
+}
