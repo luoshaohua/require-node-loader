@@ -24,7 +24,9 @@ module.exports = function (content) {
 
     //console.log('__dirname', __dirname);
     var index = __dirname.indexOf('/node_modules/');
-    if (index === -1) {
+    if (query.base) {
+        index = query.base.length;
+    } else if (index === -1) {
         index = __dirname.indexOf('\\node_modules\\');
     }
     var urlPath = this.resourcePath.split('?', 1)[0].slice(index).replace(/\\/g, '/');
