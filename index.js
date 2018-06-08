@@ -23,11 +23,20 @@ module.exports = function (content) {
     }
 
     //console.log('__dirname', __dirname);
-    var index = __dirname.indexOf('/node_modules/');
+    var index;
     if (query.base) {
-        index = query.base.length;
-    } else if (index === -1) {
-        index = __dirname.indexOf('\\node_modules\\');
+        if (/[\\/]$/.test(query.base)) {
+            query.base = query.base.slice(0, -1);
+        }
+        index = query.base.lastIndexOf('/');
+        if (index === -1) {
+            index = query.base.lastIndexOf('\\');
+        }
+    } else {
+        index = __dirname.indexOf('/node_modules/');
+        if (index === -1) {
+            index = __dirname.indexOf('\\node_modules\\');
+        }
     }
     var urlPath = this.resourcePath.split('?', 1)[0].slice(index).replace(/\\/g, '/');
     var moduleName = aliasPathDict && aliasPathDict[urlPath] || urlPath;

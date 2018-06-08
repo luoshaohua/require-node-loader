@@ -1,6 +1,6 @@
 {
   "name": "require-node-loader",
-  "version": "1.0.4",
+  "version": "1.2.0",
   "description": "webpack loader for npm package require-node",
   "main": "index.js",
   "scripts": {
