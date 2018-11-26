@@ -1,6 +1,6 @@
 {
   "name": "require-node-loader",
-  "version": "1.2.0",
+  "version": "2.0.0",
   "description": "webpack loader for npm package require-node",
   "main": "index.js",
   "scripts": {
@@ -13,8 +13,7 @@
   },
   "license": "ISC",
   "dependencies": {
-    "require-node": "*",
-    "loader-utils": "^0.2.16"
+    "require-node": "^2.0.0"
   },
   "repository": {
     "type": "git",
